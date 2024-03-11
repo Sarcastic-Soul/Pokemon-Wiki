@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonWiki</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="pokeball.svg" alt="pokeball-logo">
+        </div>
+        <div class="PokemonWiki">PokemonWiki</div>
+        <div class="Guess-the-pokemon">
+            <a href="GuessThePokemon/index.html" target="_blank">Guess The Pokemon!</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="input" placeholder="Search for Pokemon" id="input-box" />
+            <button class="button" id="search-button">Search</button>
+        </div>
+        <div class="list"></div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="top-half">
+                <div class="intro">
+                    <div class="pokedex-id"></div>
+                    <div class="sprite">
+                        <img src="" alt="Pokemon-sprite">
+                    </div>
+                    <div class="pokemon-name">
+                    </div>
+                    <div class="types">
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="summary">
+                        <h3>Description</h3>
+                        <p>Filler Text</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Abilities</h3>
+                        <div id="ability">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="side">
+                    <div>HP</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-6"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="hp-num">150</div>
+                </div>
+                <div class="side">
+                    <div>Attack</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="attack-num">63</div>
+                </div>
+                <div class="side">
+                    <div>Defence</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="defence-num">15</div>
+                </div>
+                <div class="side">
+                    <div>Special Attack</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="special-attack-num">6</div>
+                </div>
+                <div class="side">
+                    <div>Special Defence</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="special-defence-num">20</div>
+                </div>
+                <div class="side">
+                    <div>Speed</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div id="speed-num">20</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

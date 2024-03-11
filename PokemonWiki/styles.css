@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 90vw;
+    background-color: ghostwhite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    padding: 8vh 0;
+    background-color: #E9C46A;
+    border-radius: 0.2rem;
+}
+
+.logo img {
+    height: auto;
+    width: 5vw;
+    min-width: 30px;
+}
+
+.PokemonWiki {
+    margin: 2vw;
+    font-size: 4vw;
+}
+
+.Guess-the-pokemon a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Guess-the-pokemon {
+    text-align: center;
+    width: 15vw;
+    min-width: 80px;
+    border: 1px solid #000;
+    border-radius: 4rem;
+    padding: 1%;
+    margin-right: 5vw;
+    background-color: #F4A261;
+
+}
+
+input {
+    height: 5vh;
+    width: 20vw;
+    min-width: 6rem;
+    border-radius: 0.2rem;
+    border: none;
+    margin-right: 1vw;
+    padding: 2%;
+}
+
+/* test for search box */
+
+.list {
+    /* Adjust position and size as needed */
+    position: absolute;
+    top: 10%;
+    /* Position below the input field */
+    right: 16.5%;
+    width: 20vw;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    /* Limit the height of the list */
+    overflow-y: auto;
+    /* Enable scrolling if there are many suggestions */
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    /* Ensure the list appears above other elements */
+}
+
+.autocomplete-items {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.autocomplete-items:hover {
+    background-color: #f1f1f1;
+}
+
+
+button {
+    height: 4vh;
+    width: 8vw;
+    min-width: 80px;
+    border-radius: 5rem;
+    border: none;
+    background-color: #F4A261;
+}
+
+button:hover {
+    border: 1px solid #c98751;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+main {
+    margin: 5%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding: 4vh 2vw;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    background-color: #F4A261;
+}
+
+.top-half {
+    display: flex;
+    flex-direction: row;
+}
+
+.pokedex-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #264653;
+    width: 3rem;
+    height: 3rem;
+    color: #f1f1f1;
+}
+
+.intro {
+    padding: 3vh 2vw;
+    max-width: 40%;
+    background-color: #E9C46A;
+    border-radius: 1rem;
+}
+
+.sprite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.sprite img {
+    height: 30vh;
+    width: 20vw;
+    min-width: 150px;
+}
+
+.intro .pokemon-name {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    background-color: #264653;
+    color: #f1f1f1;
+}
+
+.types {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+.intro #type-1 {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.intro #type-2 {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.summary {
+    margin: 1vh 2vw;
+    background-color: #E9C46A;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: fit-content;
+}
+
+.ability {
+    margin: 2vh 2vw;
+    background-color: #E9C46A;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: fit-content;
+}
+
+.stats {
+    padding: 1vh 2vw;
+    margin-top: 2vh;
+    /* margin: 2vh 1vw;
+    background-color: #E9C46A;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: fit-content; */
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 20%;
+    margin-top: 2vh;
+}
+
+.middle {
+    float: left;
+    width: 60%;
+    margin-top: 2vh;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.stats:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-6 {
+    width: 100%;
+    height: 2vh;
+    background-color: #04AA6D;
+}
+
+.bar-5 {
+    width: 60%;
+    height: 2vh;
+    background-color: #e20808;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 2vh;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 2vh;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 2vh;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 2vh;
+    background-color: #f44336;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 740px) {
+
+    body {
+        font-size: 0.75rem;
+    }
+
+    .input {
+        display: block;
+        margin-bottom: 1vh;
+    }
+
+    .top-half {
+        display: block;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+    .side,
+    .middle {
+        width: 100%;
+    }
+
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
